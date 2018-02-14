@@ -1,0 +1,19 @@
+ul {
+    display: block;
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 0 0 3em 0;
+    clear: both;
+}
+
+li {
+    padding: 5px;
+    border: solid 1px #ccc;
+    text-align: center;
+    font-size: 1.4em;
+    float: left;
+}
+
+li:hover {
+    cursor: pointer;
+}

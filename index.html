@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Par ou Ímpar!</title>
+    <link
+      rel="stylesheet"
+      href="css/poi.css">
+  </head>
+  <body>
+    <!-- Início do jogo -->
+    <div id="poi-wrappepr">
+      <div id="poi">
+        <h1>Par ou Ímpar</h1>
+
+        <!-- Escolhe entre par ou ímpar -->
+        <div id="poi-escolha-poi">
+          <ul>
+            <li class="poi-escolha poi-esolha-par" data-indice="par">Par</li>
+            <li class="poi-escolha poi-esolha-impar" data-indice="ímpar">Ímpar</li>
+          </ul>
+        </div>
+
+        <!-- Escolhe o número a ser jogado -->
+        <div id="poi-escolha-numero">
+          <ul>
+            <li class="poi-escolha-numero poi-esolha-numero-0" data-indice="0">0</li>
+            <li class="poi-escolha-numero poi-esolha-numero-1" data-indice="1">1</li>
+            <li class="poi-escolha-numero poi-esolha-numero-3" data-indice="2">2</li>
+            <li class="poi-escolha-numero poi-esolha-numero-4" data-indice="3">3</li>
+            <li class="poi-escolha-numero poi-esolha-numero-4" data-indice="4">4</li>
+            <li class="poi-escolha-numero poi-esolha-numero-5" data-indice="5">5</li>
+          </ul>
+        </div>
+
+        <!-- A escolha do jogador par ou ímpar -->
+        <div id="poi-escolha-jogador-poi"></div>
+
+        <!-- O número escolhido pelo jogador -->
+        <div id="poi-escolha-jogador-numero"></div>
+
+        <!-- O sorteio aleatório da CPU -->
+        <div id="poi-escolha-cpu"></div>
+
+        <!-- ExibO a soma dos números -->
+        <div id="poi-soma"></div>
+
+        <!-- Mostro se o número é par ou ímpar -->
+        <div id="poi-resultado"></div>
+
+        <!-- O vencedor -->
+        <div id="poi-vencedor"></div>
+
+        <!-- jogar novamente? -->
+        <div id="poi-reset">
+          <input type="button" value="Jogar mais uma vez?" onClick="window.location.reload()">
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script
+         src="js/poi.js">
+    </script>
+    <script>
+        Rodada();
+    </script>
+  </body>
+</html>
